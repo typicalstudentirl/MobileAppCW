@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1062624352916",
+    "firebase_url": "https://mobileappcw.firebaseio.com",
+    "project_id": "mobileappcw",
+    "storage_bucket": "mobileappcw.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062624352916:android:e90875ffa88c5fc7",
+        "android_client_info": {
+          "package_name": "com.example.mobileappcw"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1062624352916-j0n47hvac1gna8kbfu31k2u9r8c7tfco.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmF1iO99ibRO6UyzOj0ACuQ6PyMZKk0-w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

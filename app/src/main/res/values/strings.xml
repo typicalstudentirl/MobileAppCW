@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">OpenWeatherFlow</string>
+    <string name="txtView_Reg_title">Sign Up</string>
+    <string name="txt_Usr_Email">Enter email</string>
+    <string name="txt_password">Enter password</string>
+    <string name="btn_Reg">Register</string>
+    <string name="txtView_logme">Already Registered?</string>
+    <string name="txtView_Login_title">User Login</string>
+    <string name="txt_Login_email">Email</string>
+    <string name="txt_Login_Password">Password</string>
+    <string name="btn_Login">Login</string>
+    <string name="txtView_signup">Not have an account? Register here</string>
+    <string name="txt_conpassword">Confirm Password</string>
+    <string name="txt_Search_City">Search City, Country, Location</string>
+    <string name="btn_Search">Search</string>
+    <string name="textView_DescriptionLabel">Description:</string>
+    <string name="textView_TemperatureLabel">Temperature:</string>
+    <string name="textView_PressureLabel">Pressure:</string>
+    <string name="textView_WindLabel">Wind:</string>
+    <string name="textView_HumidityLabel">Humidity:</string>
+    <string name="btn_logOutLabel">Logout</string>
+</resources>

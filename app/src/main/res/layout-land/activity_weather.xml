@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeatherActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/textView_humidity"
+        android:layout_width="190dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="7dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_wind"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_pressure" />
+
+    <TextView
+        android:id="@+id/textView_temperature"
+        android:layout_width="190dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="7dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_pressure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_description" />
+
+
+    <TextView
+        android:id="@+id/textView_description"
+        android:layout_width="190dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="7dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_temperature"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_search_weather" />
+
+    <TextView
+        android:id="@+id/textView_wind"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="45dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginLeft="201dp"
+        android:layout_marginRight="107dp"
+        android:layout_marginStart="201dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_logout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_humidity" />
+
+    <TextView
+        android:id="@+id/textView_pressure"
+        android:layout_width="190dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_humidity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_temperature" />
+
+    <EditText
+        android:id="@+id/txt_User_Search"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginStart="45dp"
+        android:ems="10"
+        android:hint="@string/txt_Search_City"
+        android:inputType="textPostalAddress"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_search_weather"
+        app:layout_constraintEnd_toStartOf="@+id/btn_search_weather"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_search_weather"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="215dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="54dp"
+        android:onClick="searchWeather"
+        android:text="@string/btn_Search"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_User_Search"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewIcon"
+        android:layout_width="119dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="17dp"
+        android:tint="@color/googleYellow"
+        app:layout_constraintBottom_toTopOf="@+id/btn_search_weather"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/baseline_wb_sunny_black_48" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:onClick="logOut"
+        android:text="@string/btn_logOutLabel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_wind"
+        app:layout_constraintTop_toBottomOf="@+id/btn_search_weather"
+        tools:text="@string/btn_logOutLabel" />
+
+
+</android.support.constraint.ConstraintLayout>
